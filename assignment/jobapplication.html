@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h1>Job Application Form</h1>
+
+    <form action="">
+        
+        <!-- Full Name -->
+        <label for="name">Full Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        <br><br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label>
+        <br>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        <br><br>
+        <label>Gender:</label>
+        <br>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br><br>
+
+        <!-- Position Applied For -->
+        <label for="position">Position Applied For:</label>
+        <br>
+        <select id="position" name="position" required>
+            <option value="">Select a position</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+        </select>
+        <br><br>
+        <!--country region-->
+        <label for="country">country:</label>
+        <br>
+        <select id="country" name="country" required>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br><br>
+
+        <!-- Resume Upload -->
+        <label for="resume">Upload Resume (PDF, DOC, DOCX):</label>
+        <br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <br><br>
+
+        <!--skills-->
+        <label for="skills">Skills or Expertise:</label>
+        <br>
+        <textarea id="skills" name="skills" rows="4" cols="50" placeholder="List your skills or expertise" required></textarea>
+        <br><br>
+
+        <!-- LinkedIn Profile URL -->
+        <label for="linkedin">LinkedIn Profile URL:</label><br>
+        <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL">
+        <br><br>
+
+        <!-- Preferred Working Hours -->
+        <label for="working_hours">Preferred Working Hours:</label>
+        <br>
+        <input type="text" id="working_hours" name="working_hours" placeholder="e.g., Full-time, Part-time, etc." required>
+        <br><br>
+
+        <!-- Availability for Interview -->
+        <label for="interview_availability">Availability for Interview:</label>
+        <br>
+        <input type="text" id="interview_availability" name="interview_availability" placeholder="Enter your availability for interview" required>
+        <br><br>
+
+        <!-- Cover Letter -->
+        <label for="cover_letter">Cover Letter:</label><br>
+        <textarea id="cover_letter" name="cover_letter" rows="4" cols="50" placeholder="Write a cover letter (optional)"></textarea><br><br>
+
+        <!-- Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any additional comments or information"></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Application</button>
+    </form>
+
+</body>
+</html>
